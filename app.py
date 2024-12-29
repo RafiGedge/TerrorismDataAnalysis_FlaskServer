@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_app.blueprints import *
+from blueprints import *
 
 app = Flask(__name__, template_folder='front/templates', static_folder='front/static')
 
