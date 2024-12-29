@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f40482420ac772eaf76733361c0901e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f40482420ac772eaf76733361c0901e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f40482420ac772eaf76733361c0901e = L.map(
+                "map_8f40482420ac772eaf76733361c0901e",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_36d56ea3d64656f09c80fbf6f3b4469c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_36d56ea3d64656f09c80fbf6f3b4469c.addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+            var marker_44a13903cdce4c0e08ecb6a50c3ff8c1 = L.marker(
+                [35.85401474829966, 122.75779698334237],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_d806e490bfae8881e3671350b5b9a966 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_bd8ea92dd70aa9a1072eb8243bcd3f80 = $(`<div id="html_bd8ea92dd70aa9a1072eb8243bcd3f80" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>East Asia</h3>                     <p>14.3629</p>                 </div>                 </div>`)[0];
+                popup_d806e490bfae8881e3671350b5b9a966.setContent(html_bd8ea92dd70aa9a1072eb8243bcd3f80);
+            
+        
+
+        marker_44a13903cdce4c0e08ecb6a50c3ff8c1.bindPopup(popup_d806e490bfae8881e3671350b5b9a966)
+        ;
+
+        
+    
+    
+            var marker_191b630477c9fcb8ce4fd419184b7ff2 = L.marker(
+                [0.6427612358191355, 26.058148744377895],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_4abc07f2b356ef68159de4ab66dae338 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_14cbd84246e6f330b4ea8335919ee33f = $(`<div id="html_14cbd84246e6f330b4ea8335919ee33f" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Sub-Saharan Africa</h3>                     <p>11.5598</p>                 </div>                 </div>`)[0];
+                popup_4abc07f2b356ef68159de4ab66dae338.setContent(html_14cbd84246e6f330b4ea8335919ee33f);
+            
+        
+
+        marker_191b630477c9fcb8ce4fd419184b7ff2.bindPopup(popup_4abc07f2b356ef68159de4ab66dae338)
+        ;
+
+        
+    
+    
+            var marker_2350c44f5111568d45624a21b379711c = L.marker(
+                [33.14519503017404, 38.388666859987715],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_124263f21436ffc962169d0f15b88f6f = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_5c033c26fdbfa67d22252fc945b9a712 = $(`<div id="html_5c033c26fdbfa67d22252fc945b9a712" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Middle East & North Africa</h3>                     <p>9.536</p>                 </div>                 </div>`)[0];
+                popup_124263f21436ffc962169d0f15b88f6f.setContent(html_5c033c26fdbfa67d22252fc945b9a712);
+            
+        
+
+        marker_2350c44f5111568d45624a21b379711c.bindPopup(popup_124263f21436ffc962169d0f15b88f6f)
+        ;
+
+        
+    
+    
+            var marker_a2e447df67c2493fea916e5311cf6231 = L.marker(
+                [36.076123388681445, -92.82464856839985],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_431c353fb35ab5a8eaf80a1f731dd799 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_72f738afa2b3fa1cdc161d1bac24fb45 = $(`<div id="html_72f738afa2b3fa1cdc161d1bac24fb45" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>North America</h3>                     <p>9.3842</p>                 </div>                 </div>`)[0];
+                popup_431c353fb35ab5a8eaf80a1f731dd799.setContent(html_72f738afa2b3fa1cdc161d1bac24fb45);
+            
+        
+
+        marker_a2e447df67c2493fea916e5311cf6231.bindPopup(popup_431c353fb35ab5a8eaf80a1f731dd799)
+        ;
+
+        
+    
+    
+            var marker_fb8ce4d9fe289b6a0f9671c0acae8b69 = L.marker(
+                [13.994721242513123, -87.72380403640813],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_4acc33b984d301c1eab81d7073f9d51c = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_9b1da6f0d9de829b77633c7d96aa1c1c = $(`<div id="html_9b1da6f0d9de829b77633c7d96aa1c1c" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Central America & Caribbean</h3>                     <p>7.669</p>                 </div>                 </div>`)[0];
+                popup_4acc33b984d301c1eab81d7073f9d51c.setContent(html_9b1da6f0d9de829b77633c7d96aa1c1c);
+            
+        
+
+        marker_fb8ce4d9fe289b6a0f9671c0acae8b69.bindPopup(popup_4acc33b984d301c1eab81d7073f9d51c)
+        ;
+
+        
+    
+    
+            var marker_21c2d92a573ef03cee1012bb867f30e0 = L.marker(
+                [28.736925243443636, 74.47678975817026],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_938807d3c94cd27c00d2cf9da13a5c2d = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_a26a3573bf874d61c2ff9df7e6bec083 = $(`<div id="html_a26a3573bf874d61c2ff9df7e6bec083" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>South Asia</h3>                     <p>7.6319</p>                 </div>                 </div>`)[0];
+                popup_938807d3c94cd27c00d2cf9da13a5c2d.setContent(html_a26a3573bf874d61c2ff9df7e6bec083);
+            
+        
+
+        marker_21c2d92a573ef03cee1012bb867f30e0.bindPopup(popup_938807d3c94cd27c00d2cf9da13a5c2d)
+        ;
+
+        
+    
+    
+            var marker_90b790121ea327bc153ec44d783ce3cb = L.marker(
+                [41.9774797656007, 54.94094589526299],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_e8337639a50dc9daa07ff5c26b50d3c1 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_77d263a5f7a7db2b6eb478853030dd13 = $(`<div id="html_77d263a5f7a7db2b6eb478853030dd13" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Central Asia</h3>                     <p>7.125</p>                 </div>                 </div>`)[0];
+                popup_e8337639a50dc9daa07ff5c26b50d3c1.setContent(html_77d263a5f7a7db2b6eb478853030dd13);
+            
+        
+
+        marker_90b790121ea327bc153ec44d783ce3cb.bindPopup(popup_e8337639a50dc9daa07ff5c26b50d3c1)
+        ;
+
+        
+    
+    
+            var marker_9007d265ae249fe7a46c234039cd2e44 = L.marker(
+                [46.6952882785116, 37.04310634461583],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_5927f19276f80b6b3a0f2b81c7c09d6f = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_a5ce59e6cc95c9d07dedbd68a0bbaf4d = $(`<div id="html_a5ce59e6cc95c9d07dedbd68a0bbaf4d" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Eastern Europe</h3>                     <p>5.025</p>                 </div>                 </div>`)[0];
+                popup_5927f19276f80b6b3a0f2b81c7c09d6f.setContent(html_a5ce59e6cc95c9d07dedbd68a0bbaf4d);
+            
+        
+
+        marker_9007d265ae249fe7a46c234039cd2e44.bindPopup(popup_5927f19276f80b6b3a0f2b81c7c09d6f)
+        ;
+
+        
+    
+    
+            var marker_ccda0273d4e6a3f0e7db6856bb828eeb = L.marker(
+                [8.940350123773182, 114.0220568029642],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_9a242d13a555958ba5e65e1c42e18c76 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_ee03c2b47356f3cf0332d5a19c78274e = $(`<div id="html_ee03c2b47356f3cf0332d5a19c78274e" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Southeast Asia</h3>                     <p>4.6324</p>                 </div>                 </div>`)[0];
+                popup_9a242d13a555958ba5e65e1c42e18c76.setContent(html_ee03c2b47356f3cf0332d5a19c78274e);
+            
+        
+
+        marker_ccda0273d4e6a3f0e7db6856bb828eeb.bindPopup(popup_9a242d13a555958ba5e65e1c42e18c76)
+        ;
+
+        
+    
+    
+            var marker_b4e5fd8373bb9d10c8d266587082734f = L.marker(
+                [-7.88138016478006, -73.30184011538915],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_0511a73261367f8204ddb692b2f43b7b = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_c4d8ec449530314bda81f35fb9c7011b = $(`<div id="html_c4d8ec449530314bda81f35fb9c7011b" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>South America</h3>                     <p>4.1329</p>                 </div>                 </div>`)[0];
+                popup_0511a73261367f8204ddb692b2f43b7b.setContent(html_c4d8ec449530314bda81f35fb9c7011b);
+            
+        
+
+        marker_b4e5fd8373bb9d10c8d266587082734f.bindPopup(popup_0511a73261367f8204ddb692b2f43b7b)
+        ;
+
+        
+    
+    
+            var marker_74eeef9fd18910ff6e5f9130edd96532 = L.marker(
+                [-23.014862970527435, 155.42886297819467],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_3a07ffdbb7b10803df717fdf5f0a1051 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_2a68d2572277f5e6d6c8bba8e4a369ba = $(`<div id="html_2a68d2572277f5e6d6c8bba8e4a369ba" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Australasia & Oceania</h3>                     <p>2.0476</p>                 </div>                 </div>`)[0];
+                popup_3a07ffdbb7b10803df717fdf5f0a1051.setContent(html_2a68d2572277f5e6d6c8bba8e4a369ba);
+            
+        
+
+        marker_74eeef9fd18910ff6e5f9130edd96532.bindPopup(popup_3a07ffdbb7b10803df717fdf5f0a1051)
+        ;
+
+        
+    
+    
+            var marker_c3e227936489142b4f3470bbdb19688b = L.marker(
+                [47.78531542469887, 3.4039219073040026],
+                {
+}
+            ).addTo(map_8f40482420ac772eaf76733361c0901e);
+        
+    
+        var popup_24a2b80979b02b38f1e24304efb7b84c = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_97b2e21cdf273be0605e542d431e68e7 = $(`<div id="html_97b2e21cdf273be0605e542d431e68e7" style="width: 100.0%; height: 100.0%;">                 <div style="width:150px; font-size:14px;">                     <h3>Western Europe</h3>                     <p>1.9466</p>                 </div>                 </div>`)[0];
+                popup_24a2b80979b02b38f1e24304efb7b84c.setContent(html_97b2e21cdf273be0605e542d431e68e7);
+            
+        
+
+        marker_c3e227936489142b4f3470bbdb19688b.bindPopup(popup_24a2b80979b02b38f1e24304efb7b84c)
+        ;
+
+        
+    
+    
+            map_8f40482420ac772eaf76733361c0901e.fitBounds(
+                [[35.85401474829966, 122.75779698334237], [0.6427612358191355, 26.058148744377895], [33.14519503017404, 38.388666859987715], [36.076123388681445, -92.82464856839985], [13.994721242513123, -87.72380403640813], [28.736925243443636, 74.47678975817026], [41.9774797656007, 54.94094589526299], [46.6952882785116, 37.04310634461583], [8.940350123773182, 114.0220568029642], [-7.88138016478006, -73.30184011538915], [-23.014862970527435, 155.42886297819467], [47.78531542469887, 3.4039219073040026]],
+                {"maxZoom": 4}
+            );
+        
+</script>
+</html>

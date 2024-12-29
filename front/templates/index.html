@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+</head>
+<body>
+<h1>{{ name }}</h1>
+<div class="controls-container">
+    <form method="POST" action="{{ action }}">
+        <label for="Options">בחר:</label>
+        <select id="Options" name="Options">
+            {% for item in list_items %}
+                <option value="{{ item }}">{{ item }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">שמור</button>
+    </form>
+    <button id="back-button" onclick="window.location.href='/'">חזור לדף הבית</button>
+</div>
+<div class="map-container">
+    <iframe src="{{ url_map }}"></iframe>
+</div>
+</body>
+</html>
